@@ -1,6 +1,9 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+<head>
     <title>Aether P&P</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,7 +11,8 @@
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <style>
+  
+  <style>
 	table {
  	   	width:100%;
 	}
@@ -30,99 +34,29 @@
     		background-color: black;
     		color: white;
 	}
-    </style>
-  </head>
-  <body>
+  </style>
+
+</head>
+
+<body>
 <div class="container">
   <div class="row">
     <div class="col-3">
-<div class="card" style="width: 15rem;">
-  <img class="card-img-top" src="../screenshots/Download.jpg" alt="Card image cap">
-  <div class="card-bodyp-3 mb-2 bg-info text-white">
-    <h4 class="card-title">New to Aether?</h4>
-    <p class="card-text">Click this random link to get started.</p>
-    <a href="#" class="btn btn-primary">random link</a>
-  </div>
+
+<div w3-include-html="NewToAether.html"></div>
+<div w3-include-html="dropdowns.html"></div>
+
+<script>
+w3.includeHTML();
+</script>
+
 </div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Basic Rules
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Getting Started</a>
-    <a class="dropdown-item" href="#">Character Creation</a>
-    <a class="dropdown-item" href="#">Combat Rules</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Ability Scores
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Strength</a>
-    <a class="dropdown-item" href="#">Dexterity</a>
-    <a class="dropdown-item" href="#">Endurance</a>
-    <a class="dropdown-item" href="#">Vitality</a>
-    <a class="dropdown-item" href="#">Attunement</a>
-    <a class="dropdown-item" href="#">Intelligence</a>
-    <a class="dropdown-item" href="#">Willpower</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Rassen
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Menschen</a>
-    <a class="dropdown-item" href="#">Elfen</a>
-    <a class="dropdown-item" href="#">Zwerge</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Magic
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Spells</a>
-    <a class="dropdown-item" href="#">Magic Schools</a>
-    <a class="dropdown-item" href="#">Creating a Spell</a>
-    <a class="dropdown-item" href="#">Runes</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Equipment
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Armor</a>
-    <a class="dropdown-item" href="#">Weapons</a>
-    <a class="dropdown-item" href="#">Adventuring Gear</a>
-    <a class="dropdown-item" href="#">Miscellaneous</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Feats
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">DO</a>
-    <a class="dropdown-item" href="#">NOT</a>
-    <a class="dropdown-item" href="#">Touch</a>
-  </div>
-</div>
-    </div>
     <div class="col-6">
 <img src="../screenshots/headerbild.jpg" class="img-fluid" alt="Responsive image">
 <br>
 <p>
 
-Vitality is cooooooool! 
-
-
-
-
-
-
+Attunement is cooooooool! 
 
 
  <table id="t01">
@@ -181,31 +115,13 @@ Vitality is cooooooool!
 </table> 	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </p>
-    </div
-    <div class="col-3">
-<div class= "links">
-<p><a> <a href="#" class="alert-link">www.charactersheets.com</a></a> <br>        
-<a> <a href="#" class="alert-link">www.aetherwürfelsets.com</a></a> <p/>
 </div>
-    </div>
-  </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<div class="col-3">
+	<div w3-include-html="rightcolumn.html"></div>
+
+	<script>
+		w3.includeHTML();
+	</script>
   </body>
 </html>
