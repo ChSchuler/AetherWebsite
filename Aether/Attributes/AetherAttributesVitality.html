@@ -1,66 +1,46 @@
 ﻿<!doctype html>
 <html lang="en">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
 <head>
-    <title>Aether P&P</title>
+    <title>Aether P&P - Attributes - Endurance</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <link href="styles/style.css" rel="stylesheet" type="text/css">
-  
-  <style>
-	table {
- 	   	width:100%;
-	}
-	table, th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-	th, td {
-    		padding: 5px;
-    		text-align: left;
-	}
-	table#t01 tr:nth-child(even) {
-    		background-color: #eee;
-	}
-	table#t01 tr:nth-child(odd) {
-   		background-color:#fff;
-	}
-	table#t01 th {
-    		background-color: black;
-    		color: white;
-	}
-  </style>
 
+  <script src="../csiJS/csi.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+      <div data-include="style.html"></div>
 </head>
 
 <body>
 <div class="container">
   <div class="row">
     <div class="col-3">
-
-<div w3-include-html="NewToAether.html"></div>
-<div w3-include-html="dropdowns.html"></div>
-
-<script>
-w3.includeHTML();
-</script>
-
-</div>
+      <div data-include="NewToAether.html"></div>
+      <div data-include="dropdowns.html"></div>
+    </div>
     <div class="col-6">
-<img src="../screenshots/headerbild.jpg" class="img-fluid" alt="Responsive image">
-<br>
-<p>
+      <img src="../screenshots/AetherLogo.png" class="img-fluid" alt="AetherLogo">
+      <br>
 
-Vitality is cooooooool! 
+	<p>
+	Your physical toughness is tracked by your vitality. The more vitality points your character has, the more total hit points he has (which is generally useful for all characters). More information on a characters health is can be found under <a href="../SecondaryAttributes/HitPoints.html/">&rarr;Hit Points</a>). Vitality also affects your resistance towards fortitude resistance checks (<a href="../SecondaryAttributes/FortitudeResistance.html/">&rarr;Fortitude Resistance</a>), which describes your characters resistance towards effects like diseases and poisons (among others). Also, characters with significant amounts of vitality get a natural resistance against damage of any type.
+	</p>
 
+	<p>
+	Note, that this ability score applies for all creatures (undeads, constructs etc. are included). For non-living creatures, vitality still represents their sturdiness or effective health.
+	</p>
 
+	<p>
  <table id="t01">
- <caption>Table: Vitality Ability Score. All values in this table are additive, unless otherwise noted.</caption>
+ <caption>Table: Endurance Ability Score. All values in this table are additive, unless otherwise noted.</caption>
   <tr>		<th>Score</th>	<th>Hit Points</th>	<th>Other</th>		</tr>
   <tr> 		<td>1</td> 	<td>1d4</td> 		<td></td> 		</tr>
   <tr>		<td>2</td> 	<td>1d4</td> 		<td></td>		</tr>
@@ -71,7 +51,7 @@ Vitality is cooooooool!
   <tr>		<td>7</td> 	<td>1d4</td> 		<td></td>		</tr>
   <tr>		<td>8</td> 	<td>1d4</td> 		<td></td>		</tr>
   <tr>		<td>9</td> 	<td>1d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
-  <tr>		<td>10</td>	<td>1d4</td> 		<td>Damage Reduction 1</td>		</tr>
+  <tr>		<td>10</td>	<td>1d4</td> 		<td>1 Damage Reduction</td>		</tr>
   <tr> 		<td>11</td> 	<td>1d4</td> 		<td></td> 		</tr>
   <tr>		<td>12</td> 	<td>1d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
   <tr>		<td>13</td> 	<td>1d4</td> 		<td></td>		</tr>
@@ -81,7 +61,7 @@ Vitality is cooooooool!
   <tr>		<td>17</td> 	<td>1d6</td> 		<td></td>		</tr>
   <tr>		<td>18</td> 	<td>1d6</td> 		<td>1 Fortitude Resistance</td>		</tr>
   <tr>		<td>19</td> 	<td>1d6</td> 		<td></td>		</tr>
-  <tr>		<td>20</td>	<td>1d6</td> 		<td>Damage Reduction 2</td>		</tr>
+  <tr>		<td>20</td>	<td>1d6</td> 		<td>2 Damage Reduction</td>		</tr>
   <tr> 		<td>21</td> 	<td>1d6</td> 		<td>1 Fortitude Resistance</td> 		</tr>
   <tr>		<td>22</td> 	<td>1d6</td> 		<td></td>		</tr>
   <tr>		<td>23</td> 	<td>1d6</td> 		<td></td>		</tr>
@@ -91,7 +71,7 @@ Vitality is cooooooool!
   <tr>		<td>27</td> 	<td>1d6</td> 		<td>1 Fortitude Resistance</td>		</tr>
   <tr>		<td>28</td> 	<td>1d6</td> 		<td></td>		</tr>
   <tr>		<td>29</td> 	<td>1d6</td> 		<td></td>		</tr>
-  <tr>		<td>30</td>	<td>1d6</td> 		<td>Damage Reduction 3, 1 Fortitude Resistance</td>		</tr>
+  <tr>		<td>30</td>	<td>1d6</td> 		<td>1 Fortitude Resistance, 3 Damage Reduction</td>		</tr>
   <tr> 		<td>31</td> 	<td>2d4</td> 		<td></td> 		</tr>
   <tr>		<td>32</td> 	<td>2d4</td> 		<td></td>		</tr>
   <tr>		<td>33</td> 	<td>2d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
@@ -101,7 +81,7 @@ Vitality is cooooooool!
   <tr>		<td>37</td> 	<td>2d4</td> 		<td></td>		</tr>
   <tr>		<td>38</td> 	<td>2d4</td> 		<td></td>		</tr>
   <tr>		<td>39</td> 	<td>2d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
-  <tr>		<td>40</td>	<td>2d4</td> 		<td>Damage Reduction 4</td>		</tr>
+  <tr>		<td>40</td>	<td>2d4</td> 		<td>4 Damage Reduction</td>		</tr>
   <tr> 		<td>41</td> 	<td>2d4</td> 		<td></td> 		</tr>
   <tr>		<td>42</td> 	<td>2d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
   <tr>		<td>43</td> 	<td>2d4</td> 		<td></td>		</tr>
@@ -111,17 +91,17 @@ Vitality is cooooooool!
   <tr>		<td>47</td> 	<td>3d4</td> 		<td></td>		</tr>
   <tr>		<td>48</td> 	<td>3d4</td> 		<td>1 Fortitude Resistance</td>		</tr>
   <tr>		<td>49</td> 	<td>3d4</td> 		<td></td>		</tr>
-  <tr>		<td>50</td>	<td>3d4</td> 		<td>Damage Reduction 5</td>		</tr>
-</table> 	
-
-
-</p>
+  <tr>		<td>50</td>	<td>3d4</td> 		<td>5 Damage Reduction</td>		</tr>
+</table> 
+	</p>
+	<p>
+	<h2> Damage Reduction </h2>
+	Reduce any damage you take (except self-inflicted damage and true damage) by this amount.
+	</p>
+    </div>
+    <div class="col-3">
+      <div data-include="rightcolumn.html"></div>
+    </div>
+  </div>
 </div>
-<div class="col-3">
-	<div w3-include-html="rightcolumn.html"></div>
-
-	<script>
-		w3.includeHTML();
-	</script>
-  </body>
 </html>

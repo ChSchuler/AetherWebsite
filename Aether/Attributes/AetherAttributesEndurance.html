@@ -1,69 +1,44 @@
 ﻿<!doctype html>
 <html lang="en">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
 <head>
-    <title>Aether P&P</title>
+    <title>Aether P&P - Attributes - Endurance</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <link href="styles/style.css" rel="stylesheet" type="text/css">
-  
-  <style>
-	table {
- 	   	width:100%;
-	}
-	table, th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-	th, td {
-    		padding: 5px;
-    		text-align: left;
-	}
-	table#t01 tr:nth-child(even) {
-    		background-color: #eee;
-	}
-	table#t01 tr:nth-child(odd) {
-   		background-color:#fff;
-	}
-	table#t01 th {
-    		background-color: black;
-    		color: white;
-	}
-  </style>
 
+  <script src="../csiJS/csi.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+      <div data-include="style.html"></div>
 </head>
 
 <body>
 <div class="container">
   <div class="row">
     <div class="col-3">
-
-<div w3-include-html="NewToAether.html"></div>
-<div w3-include-html="dropdowns.html"></div>
-
-<script>
-w3.includeHTML();
-</script>
-
-</div>
+      <div data-include="NewToAether.html"></div>
+      <div data-include="dropdowns.html"></div>
+    </div>
     <div class="col-6">
-<img src="../screenshots/AetherLogo.png" class="img-fluid" alt="Responsive image">
-<br>
-<p>
+      <img src="../screenshots/AetherLogo.png" class="img-fluid" alt="AetherLogo">
+      <br>
 
-Endurance is a measure of your physical hardiness. It defines the amount of stamina points you have, which can be used to do any exhausting actions. The amount of stamina points you get per point of endurance is given in the table below. Stamina is a precious resource, which is extremely important during fights, as it is used to do any defensive maneouvre, aswell as for most special abilities. When you lose to much stamina, you won't be able to defend against attacks, which will very soon result in apparent death of the character. On the other side, you can try to use this against your opponents. When your current stamina reaches zero, your character becomes tired (see Fatigue, in <a href="../Dictionary/Status.html/">&rarr;Status Effects</a>) and eventually, you will become unconscious.
-</p>
+	<p>
+	Endurance is a measure of your physical hardiness. It defines the amount of stamina points you have, which can be used to do any exhausting actions. The amount of stamina points you get per point of endurance is given in the table below. Stamina is a precious resource, which is extremely important during fights, as it is used to do any defensive maneouvre, aswell as for most special abilities. When you lose to much stamina, you won't be able to defend against attacks, which will very soon result in apparent death of the character. On the other side, you can try to use this against your opponents. When your current stamina reaches zero, your character becomes tired (see Fatigue, in <a href="../Dictionary/Status.html/">&rarr;Status Effects</a>) and eventually, you will become unconscious.
+	</p>
 
-<p>
+	<p>
+	Endurance also directly influences the amount of weight you can carry (<a href="../SecondaryAttributes/CarryCapacity.html/"> &rarr;Carry Capacity</a>), as well as the amount of pain you can cope with (<a href="../SecondaryAttributes/PainResistance.html/">&rarr;Pain Resistance</a>). 
+	</p>
 
-Endurance also directly influences the amount of weight you can carry (<a href="../SecondaryAttributes/CarryCapacity.html/"> &rarr;Carry Capacity</a>), as well as the amount of pain you can cope with (<a href="../SecondaryAttributes/PainResistance.html/">&rarr;Pain Resistance</a>). 
-
-
+	<p>
  <table id="t01">
  <caption>Table: Endurance Ability Score. All values in this table are additive, unless otherwise noted.</caption>
   <tr>		<th>Score</th>	<th>Stamina Points</th>	<th>Other</th>		</tr>
@@ -117,15 +92,12 @@ Endurance also directly influences the amount of weight you can carry (<a href="
   <tr>		<td>48</td> 	<td>3d4</td> 		<td>1 Pain Resistance</td>		</tr>
   <tr>		<td>49</td> 	<td>3d4</td> 		<td></td>		</tr>
   <tr>		<td>50</td>	<td>3d4</td> 		<td></td>		</tr>
-</table> 	
-
-
-</p>
+</table> 
+	</p>
+    </div>
+    <div class="col-3">
+      <div data-include="rightcolumn.html"></div>
+    </div>
+  </div>
 </div>
-<div class="col-3">
-	<div w3-include-html="rightcolumn.html"></div>
-	<script>
-		w3.includeHTML();
-	</script>
-  </body>
 </html>
