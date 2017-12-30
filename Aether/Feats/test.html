@@ -1,0 +1,289 @@
+<!doctype html>
+
+  <head>
+    <title>Aether P&P</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <link href="styles/style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- include bootstrap icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  
+  <style>
+    <!-- make tree fancy -->
+    .feats {
+    }
+    <!-- feat card characteristics -->
+    .feat_card {
+	width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+    }
+    .feat_card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .feat_name {
+	background-color: #48d1cc;
+	padding: 2px 14px;
+	border-radius: 3px;
+    }
+    .feat_container {
+	background-color: white;
+	padding: 2px 16px;
+    }
+    .feat_prereq {
+	background-color:  #32cd32;
+	padding: 2px 14px;
+	border-radius: 3px;
+    }
+  </style>
+
+
+  <!-- tree-opening mechanism -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript">
+	$(function(){
+		$('#feat_tree').find('SPAN').click(function(e){
+ 	   		$(this).parent().children('UL').toggle("feats");
+		});
+	});
+  </script>
+
+  </head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="../screenshots/Download.jpg" alt="Card image cap">
+  <div class="card-bodyp-3 mb-2 bg-info text-white">
+    <h4 class="card-title">New to Aether?</h4>
+    <p class="card-text">Click this random link to get started.</p>
+    <a href="#" class="btn btn-primary">random link</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Basic Rules
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Getting Started</a>
+    <a class="dropdown-item" href="#">Character Creation</a>
+    <a class="dropdown-item" href="#">Combat Rules</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Ability Scores
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a href="https://www.AetherAttributesStrength.html/">Strength</a>
+    <a class="dropdown-item" href="#">Dexterity</a>
+    <a class="dropdown-item" href="#">Endurance</a>
+    <a class="dropdown-item" href="#">Vitality</a>
+    <a class="dropdown-item" href="#">Attunement</a>
+    <a class="dropdown-item" href="#">Intelligence</a>
+    <a class="dropdown-item" href="#">Willpower</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Rassen
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Menschen</a>
+    <a class="dropdown-item" href="#">Elfen</a>
+    <a class="dropdown-item" href="#">Zwerge</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Magic
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Spells</a>
+    <a class="dropdown-item" href="#">Magic Schools</a>
+    <a class="dropdown-item" href="#">Creating a Spell</a>
+    <a class="dropdown-item" href="#">Runes</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Equipment
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Armor</a>
+    <a class="dropdown-item" href="#">Weapons</a>
+    <a class="dropdown-item" href="#">Adventuring Gear</a>
+    <a class="dropdown-item" href="#">Miscellaneous</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Feats
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">DO</a>
+    <a class="dropdown-item" href="#">NOT</a>
+    <a class="dropdown-item" href="#">Touch</a>
+  </div>
+</div>
+    </div>
+    <div class="col-6">
+<img src="../screenshots/AetherLogo.png" class="img-fluid" alt="Responsive image">
+<br>
+<p>
+<UL id="feat_tree">
+    <LI>
+     <span> 
+	<div class="feat_card">
+		<div class="feat_name">
+			Offensive Hammer Proficiency I
+		</div>
+		<div class="feat_container">
+			You are able to properly attack with axes. Gain +1 on all attack rolls made with hammers.
+		</div>
+		<div class="feat_prereq">
+			Strength 8
+		</div>
+	</div>
+     </span>
+        <UL>
+            <LI>
+     		<span> 
+			<div class="feat_card">
+				<div class="feat_name">
+					Offensive Hammer Proficiency II
+				</div>
+				<div class="feat_container">
+					Gain an additional +1 on all attack rolls made with hammers.
+				</div>
+				<div class="feat_prereq">
+					Strength 11, Offensive Hammer Proficiency I
+				</div>
+			</div>
+     		</span>
+		<UL>
+			<LI>
+				<span> 
+					<div class="feat_card">
+						<div class="feat_name">
+							Offensive Hammer Proficiency III
+						</div>
+						<div class="feat_container">
+							Gain an additional +1 on all attack rolls made with hammers.
+						</div>
+						<div class="feat_prereq">
+							Strength 15, Offensive Hammer Proficiency II
+						</div>
+					</div>
+     				</span>
+				<UL>
+					<LI>
+						<span> 
+							<div class="feat_card">
+								<div class="feat_name">
+									Offensive Hammer Proficiency IV
+								</div>
+								<div class="feat_container">
+									Gain an additional +1 on all attack rolls made with hammers.
+								</div>
+								<div class="feat_prereq">
+									Strength 19, Offensive Hammer Proficiency III
+								</div>
+							</div>
+     						</span>
+					</LI>
+					<LI>
+						<span> 
+							<div class="feat_card">
+								<div class="feat_name">
+									<i class="glyphicon glyphicon-asterisk"></i> Ground Shatter
+								</div>
+								<div class="feat_container">
+									Hit the ground with a massive blow, which shakes up the near area. As a 3-tick action, you can expend three stamina points to make an attack roll against all characters standing on the ground in a 3-field cone (starting at you). Characters, which fail to dodge, are shocked by the quake, loosing two ticks in their next turn. This attack can only be dodged, not parried or blocked. Floating and/or flying creatures are not affected.
+								</div>
+								<div class="feat_prereq">
+									Strength 16, Offensive Hammer Proficiency III
+								</div>
+							</div>
+     						</span>
+					</LI>
+				</UL>
+			</LI>
+		</UL>
+	    </LI>
+        </UL>
+    </LI>
+    <LI><span>Example Item 2</span></LI>
+    <LI><span>Example Sub List 3</span>
+        <UL>
+            <LI><span>Example Item 3.1</span></LI>
+            <LI><span>Example Item 3.2</span></LI>
+            <LI><span>Example Item 3.3</span></LI>
+        </UL>
+    </LI>
+    <LI><span>Example Sub List 4</span>
+        <UL>
+            <LI><span>Example Item 4.1</span>
+                <UL>
+                    <LI><span>Example Item 4.1.1</span></LI>
+                    <LI><span>Example Item 4.1.2</span></LI>
+                    <LI><span>Example Item 4.1.3</span>
+		        <UL>
+			    <LI><span>Example Item 4.1.2.1</span></LI>
+			    <LI><span>Example Item 4.1.2.2</span></LI>
+		        </UL>
+		    </LI>
+                </UL>
+	    </LI>
+            <LI><span>Example Item 4.2</span>
+                <UL>
+                    <LI><span>Example Item 4.2.1</span></LI>
+                    <LI><span>Example Item 4.2.2</span></LI>
+                    <LI><span>Example Item 4.2.3</span>
+		        <UL>
+			    <LI><span>Example Item 4.2.2.1</span></LI>
+			    <LI><span>Example Item 4.2.2.2</span></LI>
+		        </UL>
+		    </LI>
+                </UL>
+	    </LI>
+            <LI><span>Example Item 4.3</span>
+                <UL>
+                    <LI><span>Example Item 4.3.1</span></LI>
+                    <LI><span>Example Item 4.3.2</span></LI>
+                    <LI><span>Example Item 4.3.3</span>
+		        <UL>
+			    <LI><span>Example Item 4.3.2.1</span></LI>
+			    <LI><span>Example Item 4.3.2.2</span></LI>
+		        </UL>
+		    </LI>
+                </UL>
+            </LI>
+        </UL>
+    </LI>
+</UL>
+
+
+</p>
+    </div
+    <div class="col-3">
+<div class= "links">
+<p><a> <a href="#" class="alert-link">www.charactersheets.com</a></a> <br>        
+<a> <a href="#" class="alert-link">www.aetherwuerfelsets.com</a></a> <p/>
+</div>
+    </div>
+  </div>
+  </body>
+</html>
+
+
