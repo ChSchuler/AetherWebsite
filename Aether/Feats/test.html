@@ -57,6 +57,7 @@
 		$('#feat_tree').find('SPAN').click(function(e){
  	   		$(this).parent().children('UL').toggle("feats");
 		});
+		$('#feat_tree').find('SPAN').parent().children('UL').hide();
 	});
   </script>
 
@@ -144,109 +145,100 @@ Ability Scores
 <img src="../screenshots/AetherLogo.png" class="img-fluid" alt="Responsive image">
 <br>
 <p>
-<UL id="feat_tree">
-    <LI>
-     <span> 
-	<div data-include="Strength/Off_Hammer_Prof1.html"></div>
-     </span>
-        <UL>
-            <LI>
-     		<span> 
-			<div data-include="Strength/Off_Hammer_Prof2.html"></div>
-     		</span>
-		<UL>
-			<LI>
-				<span> <div data-include="Strength/Off_Hammer_Prof3.html"></div> </span>
+<UL id="feat_tree"> <LI>
+	<span> <div data-include="Strength/Off_Hammer_Prof1.html"></div> </span>
+	<UL> <LI>
+     		<span> <div data-include="Strength/Off_Hammer_Prof2.html"></div> </span>
+		<UL> <LI>
+			<span> <div data-include="Strength/Off_Hammer_Prof3.html"></div> </span>
+			<UL> <LI>
+				<span> <div data-include="Strength/Off_Hammer_Prof4.html"></div> </span>
 				<UL> <LI>
-					<span> <div data-include="Strength/Off_Hammer_Prof4.html"></div> </span>
+					<span> <div data-include="Strength/Off_Hammer_Prof5.html"></div> </span>
 					<UL> <LI>
-						<span> <div data-include="Strength/Off_Hammer_Prof5.html"></div> </span>
+						<span> <div data-include="Strength/Off_Hammer_Prof6.html"></div> </span>
 						<UL> <LI>
-							<span> <div data-include="Strength/Off_Hammer_Prof6.html"></div> </span>
+							<span> <div data-include="Strength/Off_Hammer_Prof7.html"></div> </span>
 							<UL> <LI>
-								<span> <div data-include="Strength/Off_Hammer_Prof7.html"></div> </span>
+								<span> <div data-include="Strength/Off_Hammer_Prof8.html"></div> </span>
 								<UL> <LI>
-									<span> <div data-include="Strength/Off_Hammer_Prof8.html"></div> </span>
+									<span> <div data-include="Strength/Off_Hammer_Prof9.html"></div> </span>
 									<UL> <LI>
-										<span> <div data-include="Strength/Off_Hammer_Prof9.html"></div> </span>
-										<UL> <LI>
-											<span> <div data-include="Strength/Off_Hammer_Prof10.html"></div> </span>
-										</LI> </UL>
+										<span> <div data-include="Strength/Off_Hammer_Prof10.html"></div> </span>
+									</LI> <LI>
+										<span> <div data-include="Strength/Hammer_Ability_4.html"></div> </span>
 									</LI> </UL>
 								</LI> </UL>
+							</LI> <LI>
+								<span> <div data-include="Strength/Hammer_Ability_3.html"></div> </span>
 							</LI> </UL>
 						</LI> </UL>
+					</LI> <LI>
+						<span> <div data-include="Strength/Hammer_Ability_2.html"></div> </span>
 					</LI> </UL>
-				</LI> <LI>
-						<span> 
-							<div class="feat_card">
-								<div class="feat_name">
-									<i class="glyphicon glyphicon-asterisk"></i> Ground Shatter
-								</div>
-								<div class="feat_container">
-									Hit the ground with a massive blow, which shakes up the near area. As a 3-tick action, you can expend three stamina points to make an attack roll against all characters standing on the ground in a 3-field cone (starting at you). Characters, which fail to dodge, are shocked by the quake, loosing two ticks in their next turn. This attack can only be dodged, not parried or blocked. Floating and/or flying creatures are not affected.
-								</div>
-								<div class="feat_prereq">
-									Strength 16, Offensive Hammer Proficiency III
-								</div>
-							</div>
-     						</span>
-					</LI>
-				</UL>
-			</LI>
-		</UL>
-	    </LI>
-        </UL>
-    </LI>
-    <LI><span>Example Item 2</span></LI>
-    <LI><span>Example Sub List 3</span>
-        <UL>
-            <LI><span>Example Item 3.1</span></LI>
-            <LI><span>Example Item 3.2</span></LI>
-            <LI><span>Example Item 3.3</span></LI>
-        </UL>
-    </LI>
-    <LI><span>Example Sub List 4</span>
-        <UL>
-            <LI><span>Example Item 4.1</span>
-                <UL>
-                    <LI><span>Example Item 4.1.1</span></LI>
-                    <LI><span>Example Item 4.1.2</span></LI>
-                    <LI><span>Example Item 4.1.3</span>
-		        <UL>
-			    <LI><span>Example Item 4.1.2.1</span></LI>
-			    <LI><span>Example Item 4.1.2.2</span></LI>
-		        </UL>
-		    </LI>
-                </UL>
-	    </LI>
-            <LI><span>Example Item 4.2</span>
-                <UL>
-                    <LI><span>Example Item 4.2.1</span></LI>
-                    <LI><span>Example Item 4.2.2</span></LI>
-                    <LI><span>Example Item 4.2.3</span>
-		        <UL>
-			    <LI><span>Example Item 4.2.2.1</span></LI>
-			    <LI><span>Example Item 4.2.2.2</span></LI>
-		        </UL>
-		    </LI>
-                </UL>
-	    </LI>
-            <LI><span>Example Item 4.3</span>
-                <UL>
-                    <LI><span>Example Item 4.3.1</span></LI>
-                    <LI><span>Example Item 4.3.2</span></LI>
-                    <LI><span>Example Item 4.3.3</span>
-		        <UL>
-			    <LI><span>Example Item 4.3.2.1</span></LI>
-			    <LI><span>Example Item 4.3.2.2</span></LI>
-		        </UL>
-		    </LI>
-                </UL>
-            </LI>
-        </UL>
-    </LI>
-</UL>
+				</LI> </UL>
+			</LI> <LI>
+				<span> <div data-include="Strength/Hammer_Ability_1.html"></div> </span>
+			</LI> </UL>
+		</LI> </UL>
+	</LI> </UL>
+</LI> <LI>
+	<span>Example Item 2</span>
+</LI> <LI>
+	<span>Example Sub List 3</span>
+        <UL> <LI>
+		<span>Example Item 3.1</span>
+	</LI> <LI>
+		<span>Example Item 3.2</span>
+	</LI> <LI>
+		<span>Example Item 3.3</span>
+	</LI> </UL>
+</LI> <LI>
+	<span>Example Sub List 4</span>
+        <UL> <LI>
+		<span>Example Item 4.1</span>
+                <UL> <LI>
+			<span>Example Item 4.1.1</span>
+		</LI> <LI>
+			<span>Example Item 4.1.2</span>
+		</LI> <LI>
+			<span>Example Item 4.1.3</span>
+		        <UL> <LI>
+				<span>Example Item 4.1.2.1</span>
+			</LI> <LI>
+				<span>Example Item 4.1.2.2</span>
+			</LI> </UL>
+		</LI> </UL>
+	</LI> <LI>
+		<span>Example Item 4.2</span>
+                <UL> <LI>
+			<span>Example Item 4.2.1</span>
+		</LI> <LI>
+			<span>Example Item 4.2.2</span>
+		</LI> <LI>
+			<span>Example Item 4.2.3</span>
+		        <UL> <LI>
+				<span>Example Item 4.2.2.1</span>
+			</LI> <LI>
+				<span>Example Item 4.2.2.2</span>
+			</LI> </UL>
+		</LI> </UL>
+	    </LI> <LI>
+		<span>Example Item 4.3</span>
+                <UL> <LI>
+			<span>Example Item 4.3.1</span>
+		</LI> <LI>
+			<span>Example Item 4.3.2</span>
+		</LI> <LI>
+			<span>Example Item 4.3.3</span>
+		        <UL> <LI>
+				<span>Example Item 4.3.2.1</span>
+			</LI> <LI>
+				<span>Example Item 4.3.2.2</span>
+			</LI> </UL>
+		</LI> </UL>
+	</LI> </UL>
+</LI> </UL>
 
 
 </p>
