@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en">
+
+
+<head>
+    <title>Aether - Equipment - Weapons</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+  <script src="../csiJS/csi.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+      <div data-include="style.html"></div>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div data-include="NewToAether.html"></div>
+      <div data-include="dropdowns.html"></div>
+    </div>
+    <div class="col-9">
+      <img src="../screenshots/AetherLogo.png" class="img-fluid" alt="AetherLogo">
+      <br>
+
+	<p>
+		<div id="toc_container">
+			<p class="toc_title">Contents</p>
+			<ul class="toc_list">
+  				<li><a href="#WeaponChars">Weapon Characteristics</a>
+  					<ul>
+    						<li><a href="#Name">Name</a></li>
+    						<li><a href="#Type">Type</a></li>
+    						<li><a href="#AT">Attack Time</a></li>
+    						<li><a href="#Base">Base Damage</a></li>
+    						<li><a href="#Dice">Damage Dice</a></li>
+    						<li><a href="#Scale">Scaling</a></li>
+    						<li><a href="#Range">Range</a></li>
+    						<li><a href="#Weight">Weight</a></li>
+    						<li><a href="#Other">Other</a></li>
+ 					</ul>
+				</li>
+				<li><a href="#Tab_Melee_Weapons">Table: Melee Weapons</a></li>
+				<li><a href="#Tab_Ranged_Weapons">Table: Ranged Weapons</a></li>
+			</ul>
+		</div>
+		<h1 id="WeaponChars">Weapon Characteristics</h1>
+		Each weapon has some characteristics, which will shortly be explained here:
+		<p>
+			<h2 id="Name">Name</h2>
+			The name of the weapon, which it can be referred to.
+		</p> 
+		<p>
+			<h2 id="Type">Weapon Type</h2>
+			This determines, to which weapon class (axes, swords, hammers etc.) the weapon is counted (this is important for certain feats).
+		</p> 
+		<p>
+			<h2 id="AT">Attack Time (AT)</h2>
+			When you make a normal attack with your weapon, this is the amount of ticks you have to spend. If you do not have enough ticks left for your round, you cannot make an attack with this weapon. A weapon with half-point attack times (e.g. 2.5) takes this amount of ticks rounded up for a single attack. When making two attacks in one round, add the attack time before rounding up (for 2.5, when making two attacks, it takes 5 ticks, not 6).
+		</p> 
+		<p>
+			<h2 id="Base">Base Damage</h2>
+			If you make a successful attack roll, this is the base damage your weapon will always deal.
+		</p> 
+		<p>
+			<h2 id="Dice">Damage Dice</h2>
+			If you make a successful attack roll, this is the type of dice you have to roll in order to determine additional damage. The number of dices to roll is determined by the weapons scaling attribute and your characters ability scores.
+		</p> 
+		<p>
+			<h2 id="Scale">Scaling</h2>
+			If you make a successful attack roll, this determines the number of damage dices to roll depending on the scaling and the weapon damage dice. E.g. if a weapon scales with D (1/6) on strength and your character has 19 strength, you roll your weapons damage dice three times and add the result. Then, add the base damage of your weapon. The final result is the amount of damage you deal. Notation is to be read like the following: Each indicated column represents an ability score, in the order Strength - Dexterity - Intelligence - Willpower. Each column has an entry representing the scaling (indicated by a letter) or a minus, indicating no scaling on this attribute. E.g. a weapon with (E|-|F|-)-scaling gets a damage dice for all seven points of strength and one for all 8 points of intelligence. 
+		</p> 
+		<p>
+			<h2 id="Range">Range</h2>
+			Only relevant for ranged weapons such as bows, staffs or thrown weapons, this indicates the reach you have without getting attack penalties due to range. You still can shoot/ throw further than the range indicates, but you suffer a penalty depending on the number of times the range number is surpassed. For each increase you get an accumulative -1 penalty on the attack roll. I.e. if you have a range of 6 fields, and shoot on a target in this range, you get no penalty. If you shoot on a target in a range of 7-12 fields, you get -1 on the attack roll. For a target in a range of 13-18, you get -2; for a target in 19-24, you get -3, and so on.
+		</p> 
+		<p>
+			<h2 id="Weight">Weight</h2>
+			The weight of the weapon (hopefully in kg), which you need to add to the burden your character has to carry, if you want to wield the weapon.
+		</p>
+		<p>
+			<h2 id="Other">Other</h2>
+			Some weapons have some special effect or extra rules, which only applies for the described weapon. There are some attributes, which are more common:
+			<h4 id="THW">Two-handed weapon</h4>
+			Two hands are required to use a two-handed weapon effectively.
+			<h4 id="double">Double</h4>
+			Double weapons can be used as if fighting with two weapons. You still incur all the normal attack penalties associated with fighting with two weapons. This is an option, and not obligatory.
+		</p> 
+	</p>
+
+	<p>
+<h1 id="Tab_Melee_Weapons"> Melee Weapons </h1>
+<table id="t01">
+<caption>Table: Overview of basic melee weapons.</caption>
+<tr>	<th>Name</th>		<th>Type</th>	<th>AT</th>	<th>Base damage</th>	<th>Dice</th>	<th>Scaling</th>	<th>Weight</th>	<th>Other</th>	</tr>
+<tr> 	<td>Greataxe</td> 	<td>Axe</td> 	<td>3.5</td> 	<td>3</td>		<td>1d10</td>	<td>D|G|-|-</td>	<td>10 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+<tr> 	<td>Battleaxe</td> 	<td>Axe</td> 	<td>3.0</td> 	<td>2</td>		<td>1d8</td>	<td>E|H|-|-</td>	<td>3.5 kg</td>	<td>-</td>	</tr>
+<tr> 	<td>Club</td> 		<td>Hammer</td>	<td>3.0</td> 	<td>4</td>		<td>1d8</td>	<td>D|-|-|-</td>	<td>4 kg</td>	<td>It's a club!</td>	</tr>
+<tr> 	<td>Warhammer</td> 	<td>Hammer</td> <td>4.0</td> 	<td>4</td>		<td>2d4</td>	<td>C|-|-|-</td>	<td>12 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+<tr> 	<td>Large Spear</td> 	<td>Spear</td>	<td>3.0</td> 	<td>0</td>		<td>1d10</td>	<td>-|C|-|-</td>	<td>4 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+<tr> 	<td>Greatsword</td> 	<td>Sword</td>	<td>3.5</td> 	<td>2</td>		<td>2d4</td>	<td>E|F|-|-</td>	<td>11 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+<tr> 	<td>Shortsword</td> 	<td>Sword</td> 	<td>3.0</td> 	<td>1</td>		<td>1d8</td>	<td>G|G|-|-</td>	<td>1 kg</td>	<td>Add Strength and Dexterity score, before evaluating the scaling.</td>	</tr>
+<tr> 	<td>Longsword</td> 	<td>Sword</td> 	<td>3.0</td> 	<td>2</td>		<td>1d8</td>	<td>F|G|-|-</td>	<td>3 kg</td>	<td>-</td>	</tr>
+<tr> 	<td>Dagger</td> 	<td>Dagger</td>	<td>2.5</td> 	<td>0</td>		<td>1d6</td>	<td>-|D|-|-</td>	<td>0.5 kg</td>	<td>Threatens critical hits on 11 and 12.</td>	</tr>
+</table> 
+
+<h1 id="Tab_Ranged_Weapons"> Ranged Weapons </h1>
+<table id="t01">
+<caption>Table: Overview of basic ranged weapons.</caption>
+<tr>	<th>Name</th>		<th>Type</th>	<th>AT</th>	<th>Base damage</th>	<th>Dice</th>	<th>Scaling</th>	<th>Range</th>		<th>Weight</th>	<th>Other</th>	</tr>
+<tr> 	<td>Shortbow</td> 	<td>Bow</td> 	<td>2.5</td> 	<td>3</td>		<td>1d6</td>	<td>-|E|-|-</td>	<td>7 fields</th>	<td>10 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+<tr> 	<td>Longbow</td> 	<td>Bow</td> 	<td>3.0</td> 	<td>2</td>		<td>1d6</td>	<td>-|E|-|-</td>	<td>10 fields</th>	<td>10 kg</td>	<td><a href="#THW">Two-handed weapon</a></td>	</tr>
+</table> 
+	</p>
+    </div>
+  </div>
+</div>
+</html>
