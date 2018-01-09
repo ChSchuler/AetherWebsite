@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="en">
+
+
+<head>
+    <title>Aether P&P - Rules - Combat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+  <script src="../csiJS/csi.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+      <div data-include="style.html"></div>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div data-include="NewToAether.html"></div>
+      <div data-include="dropdowns.html"></div>
+    </div>
+    <div class="col-6">
+      <img src="../screenshots/AetherLogo.png" class="img-fluid" alt="AetherLogo">
+      <br>
+
+	<p>
+		<div id="toc_container">
+			<p class="toc_title">Combat Rules</p>
+			<ul class="toc_list">
+  				<li><a href="#Space">The Playground</a>
+  					<ul>
+    						<li><a href="#Field">The Combat Field</a></li>
+    						<li><a href="#AoEs">Common Areas</a></li>
+ 					</ul>
+				</li>
+				<li><a href="#Time">Combat Time</a></li>
+					<ul>
+						<li><a href="#Initiative">Combat Rounds and Initiative</a></li>
+						<li><a href="#Ticks">Time Ticks / Action Points</a>
+							<ul>
+								<li><a href="#Step">Step</a></li>
+								<li><a href="#Move">Move</a></li>
+								<li><a href="#Attack">Attack</a></li>
+								<li><a href="#Spells">Spells</a></li>
+							</ul>
+						</li>
+					</ul>
+			</ul>
+		</div>
+	</p>
+
+	<p>
+					<h1> Combat Rules </h1>
+	This section describes how combat works in Aether. It features general quantities often referred to by other sources and introduces the field as well as the action point- (AP) or ticks-system. For more details on certain mechanics, refer to their corresponding sections.
+	</p> <p>
+				<h2 id="Space">The Playground</h2>
+	</p> <p>
+			<h3 id="Field">The Combat Field</h3>
+	Combat in Aether takes place on a hexagonal field. As all movements and distances should be given in units of fields for all intents of combat, there should not be any question about the actual conversion. If there is some flaw, where something is given in meters or feet, or, what is hopefully more often the case, to describe certain rooms with actual fields: a field corresponds to 5 feet or 1.5 meters.
+	</p> <p>
+			<h3 id="AoEs"> Common Areas </h3>
+	</p> <p>
+	Some common areas are shortly shown here.
+	</p> <p>
+				<h2 id="Time">Combat Time</h2>
+	</p> <p>
+			<h3 id="Initiative"> Combat Rounds and Initiative </h3>
+	</p> <p>
+	Combat in Aether is round based. In each round, all characters get a single turn act. To determine the order of the turns of all characters inbound in the fight, an initiative roll is is made. For this, each character rolls his d12 and adds any modifiers he might get to his initiative score. The higher the score, the earlier he acts. In case of a tie, player characters always act before non-player characters. If there are ties between players, they can resolve it (for ties between NPCs, the GM decides).
+	</p> <p>
+	The initiative roll is made once at the beginning of combat. The following turn order is kept for the whole combat.
+	</p> <p>
+
+	<h3 id="Ticks"> Time Ticks / Action Points </h3>
+	A characters turn consists of six action points (AP) or short 'ticks'. Each tick corresponds to approximately one second of time, so a whole round takes six seconds in total (10 rounds make a minute). Everything a character can do during their turn costs a certain amount of ticks in order to do so. This applies to attacks, spell casts, movement etc. Some common uses of ticks are given here:
+	</p> <p>
+	<h5 id="Step"> Step </h5>
+	As a one-tick action, a character can move to any unoccupied adjectant field.
+	</p> <p>
+	<h5 id="Move"> Move </h5>
+	As a two-tick action, a character can move up to half of his movement rate. A character can spend one stamina point in order to move his full movement rate.
+	</p> <p>
+	<h5 id="Attack"> Attack </h5>
+	Attack times are depending on the weapon the character is using. Typically, small weapons have small attack times (2.5 and 3.0), while large weapons have large attack times (3.5, 4.0). These attack times specify the exact amount of time it takes, to make a single attack with that weapon. If the attack time number is non-integer, round up.
+	</p> <p>
+	<h5 id="Spells"> Spells </h5>
+	The time to cast a spell is highly dependent on the complexity of the spell. For each two complexity points the spell has, the cast time in increased by one tick (one tick for a spell with complexity 1-2, five ticks for a spell with complexity 9-10 and so on). For more information, refer to <a href="Magic.html/">&rarr;Spells</a>.
+    </div>
+    <div class="col-3">
+      <div data-include="rightcolumn.html"></div>
+    </div>
+  </div>
+</div>
+</html>
