@@ -87,7 +87,23 @@
 	As a one-tick action, a character can move to any unoccupied adjectant field.
 	</p> <p>
 	<h5 id="Move"> Move </h5>
-	As a two-tick action, a character can move up to half of his movement rate. A character can spend one stamina point in order to move his full movement rate.
+	A character can move his movement speed in two ticks. For medium creatures, this will be 4 fields most times, though there are exceptions. For every tick he spends after this on movement, he can move up to half his movement speed (rounded up). 
+	<h5 id="Rush"> Rush </h5>
+	Instead of moving normally, any character can choose to 'rush' all movement in his turn. The characters movement speed is enhanced by an additional half of his movement speed, rounded up (so for a creature with 4 fields normally, he has 6 fields for this round only (5 becomes 8, 6 becomes 9 and so on)). This fast movement is exhausting and therefore costs 2 stamina for the round, independent of the nomber of ticks he spends on moving. This can only be done, when using at least two ticks to move in the turn. An overview of those movement patterns is given in <a href="#MSTable">Table: Common Movement Speed</a>
+	</p> <p>
+	<table id="MSTable">
+ <caption>Table: Common Movement Speed. This table shows, how many fields a character with a certain base movement speed can move with / without spending stamina. Note, that one cannot rush one-tick movement.</caption>
+  <tr>		<th>Ticks (AP)</th>	<th>Move</th>	<th>Rush (2 stamina)</th>			<th>Move</th>	<th>Rush (2 stamina)</th>		</tr>
+  <tr>		<td></td> 		<td colspan="2">Normal movement speed (4 fields)</td>		<td colspan="2">Enhanced movement speed (5 fields)</td></tr>
+  <tr> 		<td>1</td> 		<td>1</td>	<td> - </td> 			<td>1</td>	<td> - </td> 		</tr>
+  <tr>		<td>2</td> 		<td>4</td>	<td>6</td>			<td>5</td>	<td>8</td>		</tr>
+  <tr>		<td>3</td> 		<td>6</td>	<td>9</td>			<td>8</td>	<td>12</td>		</tr>
+  <tr> 		<td>4</td> 		<td>8</td>	<td>12</td> 			<td>10</td>	<td>15</td> 		</tr>
+  <tr>		<td>5</td> 		<td>10</td>	<td>15</td>			<td>13</td>	<td>20</td>		</tr>
+  <tr>		<td>6</td> 		<td>12</td>	<td>18</td>			<td>15</td>	<td>23</td>		</tr>
+  <tr>		<td>7</td> 		<td>14</td>	<td>21</td>			<td>18</td>	<td>27</td>		</tr>
+  <tr>		<td>8</td> 		<td>16</td>	<td>24</td>			<td>20</td>	<td>30</td>		</tr>
+	</table>
 	</p> <p>
 	<h5 id="Attack"> Attack </h5>
 	Attack times are depending on the weapon the character is using. Typically, small weapons have small attack times (2.5 and 3.0), while large weapons have large attack times (3.5, 4.0). These attack times specify the exact amount of time it takes, to make a single attack with that weapon. If the attack time number is non-integer, round up.
